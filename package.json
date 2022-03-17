@@ -1,7 +1,7 @@
 {
   "name": "autoversion",
   "version": "1.0.0",
-  "description": "Made In Malawi  \uD83C\uDDF2\uD83C\uDDFC",
+  "description": "Made In Malawi  🇲🇼",
   "main": "index.js",
   "scripts": {
     "test": "echo Welcome to $npm_package_name v$npm_package_version",
