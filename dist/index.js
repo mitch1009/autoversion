@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 288:
+/***/ 755:
 /***/ ((module) => {
 
 module.exports = eval("require")("../package.json");
@@ -58,7 +58,7 @@ module.exports = require("child_process");
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-const pv = __nccwpck_require__(288)
+const pv = __nccwpck_require__(755)
 const { exec } = __nccwpck_require__(81);
 
 const node_version=pv.version
