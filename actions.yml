@@ -2,10 +2,10 @@ name: 'autoversion'
 description: 'Automate Versions'
 inputs:
 
-  over-ride:  # id of input
+  overide:  # id of input
     description: 'Who to greet'
     required: false
-  append-digits: #add more digits
+  apend: #add more digits
     descrioption: "add more digits  to the existing 3 digit version format"
     required: false
 
