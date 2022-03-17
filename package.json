@@ -6,7 +6,17 @@
   "scripts": {
     "test": "echo Welcome to $npm_package_name v$npm_package_version",
     "commit": "git add . && git commit -m",
-    "push": "git push --follow-tags"
+    "push:plain": "git push --follow-tags",
+    "der": "npm run push && git ls-remote --tags --refs origin | cut -f2 | xargs git push origin --delete ",
+    "del": "git tag | xargs git tag -d",
+    "build": "ncc build index.js --license licenses.txt && git add . && git commit -m ",
+    "local": "ncc build index.js --license licenses.txt && git add .",
+    "tags": "git tag -a -m \" v$npm_package_version automated deployment $npm_package_time\" v$npm_package_version  && git push --follow-tags",
+    "push": "git pull && npm run local && npm run del && npm run tags",
+    "sample": "echo hello $npm_package_author_name, your commut is complete",
+    "lt": "git ls-remote --tags origin",
+    "ts": " tsc -w && npm run  build",
+    "fun": "times=$(date \"+%d-%m-%Y:%H:%M\") && echo Welcome to $npm_package_name - $npm_package_description :feelsgood: $times"
   },
   "repository": {
     "type": "git",
@@ -18,5 +28,15 @@
   "bugs": {
     "url": "https://github.com/mitch1009/autoversion/issues"
   },
-  "homepage": "https://github.com/mitch1009/autoversion#readme"
+  "homepage": "https://github.com/mitch1009/autoversion#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@types/nodemailer": "^6.4.4",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "package.json": "^2.0.1",
+    "typescript": "^4.6.2"
+  }
 }

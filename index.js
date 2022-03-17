@@ -1,7 +1,6 @@
 const pv = require("../package.json")
 const { exec } = require("child_process");
-console.log(pv.version)
-console.log(typeof pv.version.split('.')[1])
+
 const node_version=pv.version
 const numbers = pv.version.split(".")
 let {
@@ -12,7 +11,7 @@ let {
     last: parseInt(numbers[2])
 }
 
-console.log(first,second, last)
+
 
 if (last <9) {
     last+=1
