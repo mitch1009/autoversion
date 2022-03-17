@@ -1,5 +1,5 @@
-name: 'maction'
-description: 'Automated Software release and updates. Connecting Developers to business and dedication makers'
+name: 'autoversion'
+description: 'Automate Versions'
 inputs:
 
   over-ride:  # id of input
