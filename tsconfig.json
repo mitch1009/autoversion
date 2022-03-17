@@ -19,5 +19,7 @@
 
   },
   "exclude": ["node_modules", "**/node_modules/*"],
-  "include": ["src/*.ts", "src/helpers/*.ts"]
+  "include": ["src/*.ts",
+    "helpers/*.ts"
+  ]
 }

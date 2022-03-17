@@ -1,4 +1,4 @@
-import * as  pv from '../package.json'
+import * as  pv from './package.json'
 import * as exec from "child_process"
 import * as github from '@actions/github'
 import * as core from '@actions/core'

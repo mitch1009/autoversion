@@ -33,7 +33,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.writeVersion = void 0;
-const pv = __importStar(require("../package.json"));
+const pv = __importStar(require("./package.json"));
 const exec = __importStar(require("child_process"));
 const core = __importStar(require("@actions/core"));
 const node_version = pv.version;
