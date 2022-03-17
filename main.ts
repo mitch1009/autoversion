@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as  pv from './package.json'
 import * as exec from "child_process"
 import * as github from '@actions/github'
@@ -6,6 +7,7 @@ import * as core from '@actions/core'
 
 const node_version = pv.version
 const numbers = pv.version.split(".")
+
 let {
     first, second, last
 } = {
