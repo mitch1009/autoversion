@@ -1,0 +1,19 @@
+name: 'maction'
+description: 'Automated Software release and updates. Connecting Developers to business and dedication makers'
+inputs:
+
+  over-ride:  # id of input
+    description: 'Who to greet'
+    required: false
+  append-digits: #add more digits
+    descrioption: "add more digits  to the existing 3 digit version format"
+    required: false
+
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+  message: # 2nd id of output
+    description: 'message'
+runs:
+  using: 'node16'
+  main: 'index.js'
