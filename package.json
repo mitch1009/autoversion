@@ -10,7 +10,7 @@
     "delocal": "git ls-remote --tags --refs origin | cut -f2 | xargs git push origin --delete ",
     "delremote": "npm run push && git ls-remote --tags --refs origin | cut -f2 | xargs git push origin --delete ",
     "del": "node retag.js",
-    "build": "ncc build index.js --license licenses.txt && git add .",
+    "build": "ncc build  index.js --license licenses.txt  && git add .",
     "push": "npm run delocal && npm run del &&  git pull ",
     "tags": "git tag -a -m \" v$npm_package_version automated deployment $npm_package_time\" v$npm_package_version  && git push --follow-tags && echo $npm_version_added",
     "newTag": "git tag -a -m \" v$npm_package_version automated deployment $npm_package_time\" v$npm_package_version",
